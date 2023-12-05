@@ -28,7 +28,7 @@ export default function Meme() {
     }
     useEffect(() => {
         const getimg = async () => {
-            let d = await fetch('https://api.imgflip.com/get_memes')
+            let d = await fetch('https://api.imgflip.com/get_memes'
             let jdata = await d.json()
             console.log(jdata)
             console.log(jdata.data.memes)
